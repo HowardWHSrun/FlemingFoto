@@ -81,12 +81,12 @@ if (mobileMenuButton) {
     mobileMenuButton.addEventListener('click', toggleMobileMenu);
 }
 
-// Enhanced parallax effect for hero section
+// Reduced parallax effect for better performance
 window.addEventListener('scroll', function() {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
     if (hero) {
-        hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+        hero.style.transform = `translateY(${scrolled * 0.1}px)`;
     }
 });
 
